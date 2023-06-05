@@ -9,6 +9,8 @@
 */
 
 
+ 
+ /*
  // Recupero elemento dal Dom tramide ID
  const recList = document.getElementById('shop-list');
 
@@ -22,6 +24,30 @@
     shopV += `<li> ${listShop[i]} </li> ` ;
  }
 
- 
+
  // Stampo in pagina
+ recList.innerHTML = shopV;
+
+*/
+
+// ----------------------------------------------------------
+
+
+// Inizio Esercizio con ciclo while
+
+const recList = document.getElementById('shop-list');
+
+const listShop = ['Latte', 'Yogurt', 'Marmellata', 'Frumento'];
+
+let shopV = '';
+
+
+ let i = 0;
+
+ while (i < listShop.length ) {
+    shopV += `<li> ${listShop[i]} </li> ` ;
+    i++;
+ }
+
+
  recList.innerHTML = shopV;
